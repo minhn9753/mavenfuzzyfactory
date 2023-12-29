@@ -1,0 +1,50 @@
+1. website_sessions:
+website_session_id: Unique identifier for each website session.
+created_at: Timestamp indicating when the session was created.
+user_id: Identifier for the user associated with the session.
+is_repeat_session: Flag indicating whether it's a repeat session.
+utm_source, utm_campaign, utm_content: Parameters for UTM tracking.
+device_type: Type of device used during the session.
+http_referer: Referring URL for the session.
+
+
+2. website_pageviews:
+website_pageview_id: Unique identifier for each website pageview.
+created_at: Timestamp indicating when the pageview occurred.
+website_session_id: Identifier linking the pageview to a specific session.
+pageview_url: URL of the pageviewed.
+
+
+3. products:
+product_id: Unique identifier for each product.
+created_at: Timestamp indicating when the product was created.
+product_name: Name of the product.
+
+
+4. orders:
+order_id: Unique identifier for each order.
+created_at: Timestamp indicating when the order was created.
+website_session_id: Identifier linking the order to a specific session.
+user_id: Identifier for the user who made the order.
+primary_product_id: Identifier for the primary product in the order.
+items_purchased: Number of items purchased in the order.
+price_usd: Total price of the order in USD.
+cogs_usd: Cost of goods sold for the order in USD.
+
+
+5. order_items:
+order_item_id: Unique identifier for each order item.
+created_at: Timestamp indicating when the order item was created.
+order_id: Identifier linking the order item to a specific order.
+product_id: Identifier for the product in the order item.
+is_primary_item: Flag indicating whether it's the primary item in the order.
+price_usd: Price of the order item in USD.
+cogs_usd: Cost of goods sold for the order item in USD.
+
+
+6. order_item_refunds:
+order_item_refund_id: Unique identifier for each order item refund.
+created_at: Timestamp indicating when the refund was created.
+order_item_id: Identifier linking the refund to a specific order item.
+order_id: Identifier linking the refund to a specific order.
+refund_amount_usd: Amount refunded for the order item in USD.
