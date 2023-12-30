@@ -1,6 +1,8 @@
 **MAVEN FUZZY FACTORY: MySQL FOR E-COMMERCE & WEB ANALYTICS**
 
 
+
+
 **THERE ARE KEY CONCEPTS TO BE COVERED:**
 
 1. Traffic Analysis & Optimization: Dive into the intricacies of understanding and optimizing web traffic.
